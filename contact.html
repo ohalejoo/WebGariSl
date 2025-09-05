@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto · Gari S.L.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="brand">
+          <img src="./assets/logo.png" alt="Logo Gari S.L." class="brand-logo">
+          <span class="brand-text">Gari S.L.</span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Sobre nosotros</a>
+          <a href="services.html">Servicios</a>
+          <a href="contact.html" class="btn btn--primary active">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+      <div class="container">
+        <h1>Hablemos de tu proyecto</h1>
+        <p class="muted">Resolvemos rápido: cuéntanos qué necesitas y te respondemos con una propuesta clara.</p>
+      </div>
+    </section>
+
+    <!-- Main -->
+    <main>
+      <section class="section">
+        <div class="container contact-grid">
+          <!-- Form card -->
+          <div class="card-elevated contact-card">
+            <h2 class="card-title">Envíanos un mensaje</h2>
+            <p class="muted">Tiempo de respuesta habitual: 24–48h laborables.</p>
+
+            <form class="form modern-form" action="#" method="post" novalidate>
+              <div class="grid-2">
+                <label class="field">
+                  <span>Nombre *</span>
+                  <input type="text" name="name" required placeholder="Tu nombre" />
+                </label>
+
+                <label class="field">
+                  <span>Email *</span>
+                  <input type="email" name="email" required placeholder="tucorreo@ejemplo.com" />
+                </label>
+              </div>
+
+              <label class="field">
+                <span>Teléfono *</span>
+                <input type="tel" name="phone" required placeholder="+34 600 000 000" />
+              </label>
+
+              <label class="field">
+                <span>Asunto</span>
+                <input type="text" name="subject" placeholder="Ej. Web con reservas + automatizaciones" />
+              </label>
+
+              <label class="field">
+                <span>Mensaje</span>
+                <textarea name="message" rows="5" placeholder="Cuéntanos brevemente tu idea o problema a resolver"></textarea>
+              </label>
+
+              <div class="inline-check">
+                <label class="check">
+                  <input type="checkbox" required />
+                  <span>Acepto el uso de mis datos para responder a mi consulta.</span>
+                </label>
+              </div>
+
+              <button class="btn btn--primary btn-wide" type="submit">Enviar</button>
+              <p class="hint">Formulario de ejemplo. Conecta tu flujo n8n o servicio de correo.</p>
+            </form>
+          </div>
+
+          <!-- Side info -->
+          <aside class="side modern-side">
+            <div class="panel soft">
+              <h3>Datos de contacto</h3>
+              <ul class="contact-list">
+                <li>📧 <a href="mailto:garalejo09@gmail.com">garalejo09@gmail.com</a></li>
+                <li>📍 Majadahonda, Madrid (ES)</li>
+              </ul>
+              <div class="badges">
+                <span class="badge">Respuesta 24–48h</span>
+                <span class="badge">Presupuesto sin compromiso</span>
+              </div>
+            </div>
+
+            <div class="panel soft">
+              <h3>Horarios</h3>
+              <ul class="hours">
+                <li><span>Lunes - Viernes </span><span>9:00 – 22:00</span></li>
+                <li><span>Sábado </span><span>9:00 – 18:00</span></li>
+                <li><span>Domingo </span><span>9:00 – 12:00</span></li>
+              </ul>
+            </div>
+
+            <!-- Mapa opcional (puedes sustituir el src por tu dirección exacta) -->
+            <div class="panel soft map-embed">
+              <h3>Estamos cerca</h3>
+              <iframe
+                title="Mapa Majadahonda"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Majadahonda%2C%20Madrid&output=embed">
+              </iframe>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div class="brand">
+          <img src="./assets/logo.png" alt="Logo Gari S.L." class="brand-logo">
+          <span class="brand-text">Gari S.L.</span>
+        </div>
+        <div class="muted">© <span id="year"></span> Gari S.L. Todos los derechos reservados.</div>
+        <div class="footer__links">
+          <a href="contact.html">Pedir cita</a>
+          <a href="contact.html">Formulario de ingreso</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

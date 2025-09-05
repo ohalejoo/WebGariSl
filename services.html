@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Servicios · Gari S.L.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container nav">
+        <a href="index.html" class="brand">
+          <img src="assets/logo.png" alt="Logo Gari S.L." class="brand-logo">
+          <span class="brand-text">Gari S.L.</span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Sobre nosotros</a>
+          <a href="services.html" class="active">Servicios</a>
+          <a href="contact.html" class="btn btn--primary">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1>Planes y precios</h1>
+          <p class="muted">
+            Elige el pack que mejor se adapte a tu negocio. Todos los sitios son rápidos, adaptados a móvil y listos para crecer.
+          </p>
+
+          <div class="pricing">
+            <!-- Básico -->
+            <article class="plan">
+              <header class="plan__header">
+                <h3>Básico</h3>
+                <p class="plan__subtitle">Landing profesional + contacto directo</p>
+                <div class="price">149€</div>
+              </header>
+              <ul class="features">
+                <li>Landing de 1–3 secciones (HTML, CSS, JS)</li>
+                <li>Diseño responsive y carga rápida</li>
+                <li>Botón a WhatsApp / Email con mensaje prellenado</li>
+                <li>Formulario de contacto conectado a n8n (envío a tu correo)</li>
+                <li>Instalación de analítica básica (visitas y clics)</li>
+                <li>Indexación en Google (sitemap + metadatos)</li>
+              </ul>
+              <div class="plan__actions">
+                <a href="contact.html" class="btn btn--primary plan__cta">Elegir plan</a>
+                <p class="plan__tag">Ideal para arrancar presencia online.</p>
+              </div>
+            </article>
+
+            <!-- Pro -->
+            <article class="plan plan--highlight">
+              <header class="plan__header">
+                <h3>Pro</h3>
+                <p class="plan__subtitle">Reservas online con automatizaciones</p>
+                <div class="price">299€</div>
+              </header>
+              <ul class="features">
+                <li>Web multipágina: Inicio, Servicios, Contacto</li>
+                <li>Formulario de reservas (fecha/hora) → <strong>Webhook n8n</strong></li>
+                <li><strong>n8n:</strong> alta de cita en Google Calendar automáticamente</li>
+                <li><strong>n8n:</strong> email de confirmación al cliente y al negocio</li>
+                <li><strong>n8n:</strong> registro de clientes en Google Sheets (mini CRM)</li>
+                <li>SEO on-page básico y métricas de conversión</li>
+                <li>1 ronda de cambios incluida</li>
+              </ul>
+              <div class="plan__actions">
+                <a href="contact.html" class="btn btn--primary plan__cta">Elegir plan</a>
+                <p class="plan__tag">Más vendido · Ahorra tiempo con reservas automáticas.</p>
+              </div>
+            </article>
+
+            <!-- Avanzado -->
+            <article class="plan">
+              <header class="plan__header">
+                <h3>Avanzado</h3>
+                <p class="plan__subtitle">Automatización completa y reseñas</p>
+                <div class="price">499€</div>
+              </header>
+              <ul class="features">
+                <li>Todo lo del <strong>Pro</strong></li>
+                <li><strong>n8n:</strong> recordatorio 24h antes por WhatsApp/Email</li>
+                <li><strong>n8n:</strong> mensaje post-servicio con enlace a reseña de Google</li>
+                <li>Catálogo o servicios editable desde Google Sheets/Drive</li>
+                <li>Optimización de rendimiento (imágenes y lazy loading)</li>
+                <li>2 rondas de cambios incluidas</li>
+              </ul>
+              <div class="plan__actions">
+                <a href="contact.html" class="btn btn--primary plan__cta">Elegir plan</a>
+                <p class="plan__tag">Perfecto para locales con flujo de citas diario.</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Extras -->
+          <div class="panel note">
+            <h3>Extras y mantenimiento</h3>
+            <ul class="bullets">
+              <li><strong>Mantenimiento Básico:</strong> 19€/mes → cambios menores, uptime y pequeñas correcciones.</li>
+              <li><strong>Mantenimiento Pro:</strong> 39€/mes → incluye soporte de n8n (flujos, ajustes y monitorización ligera).</li>
+              <li>Dominio y hosting no incluidos (te asesoro para que lo consigas al mejor precio).</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div class="brand">
+          <img src="assets/logo.png" alt="Logo Gari S.L." class="brand-logo">
+          <span class="brand-text">Gari S.L.</span>
+        </div>
+        <div class="muted">© <span id="year"></span> Gari S.L. Todos los derechos reservados.</div>
+        <div class="footer__links">
+          <a href="contact.html">Pedir cita</a>
+          <a href="contact.html">Formulario de ingreso</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
