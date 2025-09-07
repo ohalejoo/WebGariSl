@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="es">
   <head>
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KCQPRNX3FB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-KCQPRNX3FB');
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Contacta con Gari S.L. y cuéntanos tu proyecto. Te respondemos en 24–48 horas con una propuesta clara y sin compromiso." />
@@ -61,13 +70,13 @@
             <h2 class="card-title">Envíanos un mensaje</h2>
             <p class="muted">Tiempo de respuesta habitual: 24–48h laborables.</p>
 
-            <form class="form modern-form" action="https://api.staticforms.xyz/submit" method="post" novalidate>
+            <form class="form modern-form" action="https://api.staticforms.xyz/submit" method="post" >
 
                 <!-- 🔑 Tu clave de Static Forms -->
                 <input type="hidden" name="accessKey" value="sf_8bk74263bgf4dk2104j0kcj7" />
 
                 <!-- 🔁 Redirección tras enviar -->
-                <input type="hidden" name="redirectTo" value="thanks.html" />
+                <input type="hidden" name="redirectTo" value="https://grupogari.es/thanks.html" />
 
                 <!-- 🛡️ Honeypot anti-spam (no borrar, pero permanece invisible al usuario) -->
                 <input type="text" name="honeypot" style="display:none" />
