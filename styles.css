@@ -349,6 +349,16 @@ main { flex: 1; }
   margin: 0.35rem 0;
 }
 
+.panel {
+  padding: 1rem; /* añade aire interno por todos lados */
+}
+
+.panel h3 {
+  margin-top: 0;       /* elimina el colapso del margen */
+  margin-bottom: 0.75rem; /* separa el título del contenido de abajo */
+}
+
+
 /* =========================================================
    8) FOOTER
 ========================================================= */
@@ -461,4 +471,80 @@ main { flex: 1; }
 
 body { 
   padding-top: var(--header-h);
+}
+
+
+
+/* Botón hamburguesa (oculto en PC) */
+.hamburger {
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* Sidebar oculto por defecto */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.sidebar a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 36px;
+}
+
+/* Responsive: en móvil ocultamos nav normal y mostramos hamburguesa */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+
+
+/* Animación hover en los planes */
+.plan {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-8px); /* se levanta un poco */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+.hamburger {
+  font-size: 28px;   /* tamaño del símbolo ☰ */
+  color: #fff;       /* color blanco */
+  background: none;  /* quita fondo por si acaso */
+  border: none;      /* quita borde */
+  cursor: pointer;   /* cursor tipo mano */
 }

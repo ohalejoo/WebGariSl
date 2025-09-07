@@ -23,4 +23,19 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     revealEls.forEach(el => el.classList.add("visible"));
   }
+
+
+
+
+  const hamburger = document.getElementById("hamburger");
+  const sidebar = document.getElementById("sidebar");
+  const closeBtn = document.getElementById("closeSidebar");
+
+  hamburger.addEventListener("click", () => {
+    sidebar.style.width = "250px"; // abre el menú
+  });
+
+  closeBtn.addEventListener("click", () => {
+    sidebar.style.width = "0"; // cierra el menú
+  });
 });

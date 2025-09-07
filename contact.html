@@ -3,7 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contacto · Gari S.L.</title>
+    <meta name="description" content="Contacta con Gari S.L. y cuéntanos tu proyecto. Te respondemos en 24–48 horas con una propuesta clara y sin compromiso." />
+
+    <title>Contacto · Gari S.L. · Solicita tu Presupuesto</title>
+    <meta name="description" content="Cuéntanos tu proyecto y recibe respuesta en 24–48h. Presupuesto sin compromiso, atención personalizada y soluciones a medida para tu negocio." />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contacto · Gari S.L.">
+    <meta property="og:description" content="Contacta con Gari S.L. y recibe una propuesta clara en menos de 48 horas. Presupuesto gratis y sin compromiso.">
+    <meta property="og:image" content="https://grupogari.es/assets/logo.png">
+    <meta property="og:url" content="https://grupogari.es/contact.html">
+    <meta property="og:type" content="website">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -21,6 +32,15 @@
           <a href="services.html">Servicios</a>
           <a href="contact.html" class="btn btn--primary active">Contacto</a>
         </nav>
+
+        <button class="hamburger" id="hamburger">☰</button>
+      <aside class="sidebar" id="sidebar">
+          <a href="javascript:void(0)" class="closebtn" id="closeSidebar">&times;</a>
+          <a href="index.html">Inicio</a>
+          <a href="about.html">Sobre Nosotros</a>
+          <a href="services.html">Servicios</a>
+          <a href="contact.html">Contacto</a>
+      </aside>
       </div>
     </header>
 
@@ -41,7 +61,20 @@
             <h2 class="card-title">Envíanos un mensaje</h2>
             <p class="muted">Tiempo de respuesta habitual: 24–48h laborables.</p>
 
-            <form class="form modern-form" action="#" method="post" novalidate>
+            <form class="form modern-form" action="https://api.staticforms.xyz/submit" method="post" novalidate>
+
+                <!-- 🔑 Tu clave de Static Forms -->
+                <input type="hidden" name="accessKey" value="sf_8bk74263bgf4dk2104j0kcj7" />
+
+                <!-- 🔁 Redirección tras enviar -->
+                <input type="hidden" name="redirectTo" value="thanks.html" />
+
+                <!-- 🛡️ Honeypot anti-spam (no borrar, pero permanece invisible al usuario) -->
+                <input type="text" name="honeypot" style="display:none" />
+
+
+
+            
               <div class="grid-2">
                 <label class="field">
                   <span>Nombre *</span>
@@ -77,7 +110,6 @@
               </div>
 
               <button class="btn btn--primary btn-wide" type="submit">Enviar</button>
-              <p class="hint">Formulario de ejemplo. Conecta tu flujo n8n o servicio de correo.</p>
             </form>
           </div>
 
@@ -86,7 +118,7 @@
             <div class="panel soft">
               <h3>Datos de contacto</h3>
               <ul class="contact-list">
-                <li>📧 <a href="mailto:garalejo09@gmail.com">garalejo09@gmail.com</a></li>
+                <li>📧 <a href="mailto:grupogarisl@gmail.com">grupogarisl@gmail.com</a></li>
                 <li>📍 Majadahonda, Madrid (ES)</li>
               </ul>
               <div class="badges">
@@ -129,7 +161,7 @@
         <div class="muted">© <span id="year"></span> Gari S.L. Todos los derechos reservados.</div>
         <div class="footer__links">
           <a href="contact.html">Pedir cita</a>
-          <a href="contact.html">Formulario de ingreso</a>
+
         </div>
       </div>
     </footer>
